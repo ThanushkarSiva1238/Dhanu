@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
 </head>
 <body>
-    thanu
+    <div class="main">
+        <div class="screen">
+            <p>DhanuMRK</p>
+            <input id="tbInput" type="text" disabled/>
+        </div>
+
+        <div id="VirtualKey">
+            <div class="firstline">
+                <input id="btnDel" type="button" class="btn cancel" value="C" onclick="del();" />
+                <input id="btnDiv" type="button" class="btn" onclick="display('/')" value="/"/>
+                <input id="btnMul" type="button" class="btn" onclick="display('*')" value="x"/>
+                <br />
+                <input id="btn7" type="button" class="btn" onclick="display('7')" value="7"/>
+                <input id="btn8" type="button" class="btn" onclick="display('8')" value="8"/>
+                <input id="btn9" type="button" class="btn" onclick="display('9')" value="9"/>
+                <br />
+                <input id="btn4" type="button" class="btn" onclick="display('4')" value="4"/>
+                <input id="btn5" type="button" class="btn" onclick="display('5')" value="5"/>
+                <input id="btn6" type="button" class="btn" onclick="display('6')" value="6"/>
+                <br />
+                <input id="btn1" type="button" class="btn" onclick="display('1')" value="1"/>
+                <input id="btn2" type="button" class="btn" onclick="display('2')" value="2"/>
+                <input id="btn3" type="button" class="btn" onclick="display('3')" value="3"/>
+                <br />
+                <input id="btn0" type="button" class="btn col" onclick="display('0')" value="0"/>
+                <input id="btndot" type="button" class="btn" onclick="display('.')" value="."/>
+            </div>
+            <div class="secondline">
+                <input id="btnSub" type="button" class="btn" onclick="display('-')" value="-"/>
+                <br />
+                <input id="btnAdd" type="button" class="btn row" onclick="display('+')" value="+"/>
+                <br />
+                <input id="btnEq" type="button" class="btn row" onclick="calculate()" value="="/>
+                <br />
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
