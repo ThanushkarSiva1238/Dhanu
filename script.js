@@ -1,7 +1,4 @@
-function input(e) {
-    var tbInput = document.getElementById("tbInput");
-    tbInput.value = tbInput.value + e.value;
-}
+
 
 function del() {
     var tbInput = document.getElementById("tbInput");
